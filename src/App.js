@@ -1,10 +1,14 @@
+import Cart from "./components/Cart/Cart";
 import Header from "./components/Header";
 
 function App() {
   return (
-    <div  >
+    <d>
       <Header />
-    </div>
+      <main className="flex justify-center items-center pt-14" >
+        <Cart />
+      </main>
+    </d>
   );
 }
 
