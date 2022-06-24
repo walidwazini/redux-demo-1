@@ -1,13 +1,13 @@
 import React from "react";
 
-const Card = (props) => {
+const Card = ({ className, children }) => {
   return (
     <section
       className={`mx-4 my-auto rounded-md p-4 w-10/12 max-w-xl ${
-        props.className ? props.className : ""
+        className ? className : ""
       } `}
     >
-      {props.children}
+      {children}
     </section>
   );
 };
