@@ -1,14 +1,23 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+
+import { uiActions } from "./store/ui-slice";
 
 const Header = () => {
+  const dispatch = useDispatch();
+
+  const toggleCartHanlder = () => {
+    dispatch(uiActions.toggle());
+  };
+
   return (
-    <header className='w-full bg-[#252424] h-[7rem] px-7 py-5 flex items-center justify-between'>
-      <h1 className='text-white text-xl'>ReduxCart</h1>
+    <header className='w-full bg-[#252424] h-[7rem] px-16 py-5 flex items-center justify-between'>
+      <h1 className='text-white text-4xl font-semibold'>ReduxCart</h1>
       <nav>
         <ul className='list-none m-0 p-0'>
           <li>
             <button
-              onClick={() => {}}
+              onClick={toggleCartHanlder}
               className='cursor-pointer h-14 min-w-[12rem] flex flex-row items-center justify-evenly rounded-md bg-transparent text-[#1ad1b9] border border-[#1ad1b9] hover:bg-[#1ad1b9] hover:border-[#1ad1b9] hover:text-white'
             >
               <span className='font-bold text-lg'>My Cart</span>

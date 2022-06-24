@@ -6,10 +6,7 @@ const ProductList = () => {
     <section className='mt-3'>
       <h2>List of Products</h2>
       <ul>
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
+        <ProductItem title={"Test"} price={5} />
       </ul>
     </section>
   );
