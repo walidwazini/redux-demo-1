@@ -1,9 +1,10 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
-import { uiActions } from "./store/ui-slice";
+import { uiActions } from "../store/ui-slice";
 
 const Header = () => {
+  const cartQty = useSelector((state) => state.cart.totalQuantity);
   const dispatch = useDispatch();
 
   const toggleCartHanlder = () => {
@@ -22,7 +23,7 @@ const Header = () => {
             >
               <span className='font-bold text-lg'>My Cart</span>
               <span className='bg-[#1ad1b9] text-gray-900 w-10 rounded-[30px] '>
-                1
+                {cartQty}
               </span>
             </button>
           </li>
