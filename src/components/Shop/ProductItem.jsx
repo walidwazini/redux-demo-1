@@ -22,7 +22,7 @@ const ProductItem = ({ title, price, author, id }) => {
 
   return (
     <Card
-      className={`bg-slate-300 w-[600px] my-4 flex flex-row justify-evenly items-center `}
+      className={`bg-slate-300 w-[600px] my-5 flex flex-row justify-evenly items-center `}
     >
       <ul>
         <li>{title}</li>

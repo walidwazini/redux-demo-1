@@ -19,7 +19,8 @@ const Header = () => {
           <li>
             <button
               onClick={toggleCartHanlder}
-              className='cursor-pointer h-14 min-w-[12rem] flex flex-row items-center justify-evenly rounded-md bg-transparent text-[#1ad1b9] border border-[#1ad1b9] hover:bg-[#1ad1b9] hover:border-[#1ad1b9] hover:text-white'
+              className={`cursor-pointer h-14 min-w-[12rem] flex flex-row items-center justify-evenly rounded-md bg-transparent text-[#1ad1b9] border border-[#1ad1b9] hover:bg-[#1ad1b9]
+               hover:border-[#1ad1b9] hover:text-white transition-colors duration-300 `}
             >
               <span className='font-bold text-lg'>My Cart</span>
               <span className='bg-[#1ad1b9] text-gray-900 w-10 rounded-[30px] '>
